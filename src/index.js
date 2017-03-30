@@ -1,11 +1,14 @@
 import express from 'express'
 
+import apiRouter from './api'
+
 const app = express()
+const port = process.env.PORT || 3000
 
-app.get('/', (req, res) => {
-  res.send(`url: ${req.url}`)
-})
+app.use(express.static('public'))
 
-app.listen(3000, () => {
-  console.log('Server running at port 3000')
+app.use('/api', apiRouter)
+
+app.listen(port, () => {
+  console.log(`Server running at port ${port}`)
 })
