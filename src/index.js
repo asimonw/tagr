@@ -5,7 +5,9 @@ import apiRouter from './api'
 const app = express()
 const port = process.env.PORT || 3000
 
-app.use(express.static('public'))
+app.use(express.static('public', {
+  extensions: ['html']
+}))
 
 app.use('/api', apiRouter)
 
