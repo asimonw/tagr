@@ -1,0 +1,19 @@
+$roboto-font-path: "../materialize-src/fonts/roboto/";
+$primary-color: #006064;
+// $primary-color: color("cyan", "darken-4");
+
+@import "../materialize-src/sass/materialize";
+
+.profile {
+  &-avatar {
+    img {
+      width: 5rem;
+      height: 5rem;
+      margin-top: 5rem;
+    }
+  }
+
+  &-tags {
+    margin-top: 5rem;
+  }
+}
