@@ -4,11 +4,11 @@
   "description": "A tagging app",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node",
-    "build": "babel src -d dist",
+    "dev-server": "nodemon src/index.js --exec babel-node",
+    "build-server": "babel src -d dist",
     "start": "node dist/index.js",
-    "build-client": "webpack",
-    "dev-client": "webpack-dev-server",
+    "build": "gulp",
+    "dev": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -22,15 +22,12 @@
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-preset-latest": "^6.24.0",
-    "css-loader": "^0.28.4",
-    "extract-text-webpack-plugin": "^2.1.2",
-    "file-loader": "^0.11.2",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
     "node-sass": "^4.5.3",
-    "nodemon": "^1.11.0",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.5.0"
+    "nodemon": "^1.11.0"
   },
   "engines": {
     "node": "6.9.4"
