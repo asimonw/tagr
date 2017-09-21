@@ -1,14 +1,22 @@
 $roboto-font-path: "../fonts/roboto/";
-$primary-color: #006064;
+$primary-color: #34de98;
+$secondary-color: #f2f2f2;
+
+.body {
+  color: #0E1117;
+  background: $secondary-color;
+}
 
 @import "../materialize-src/sass/materialize";
 
 .profile {
   &-avatar {
     img {
-      width: 5rem;
-      height: 5rem;
+      width: 10rem;
+      height: 10rem;
       margin-top: 5rem;
+      box-shadow: 10px 10px 5px $primary-color;
+      b
     }
   }
 
@@ -16,3 +24,45 @@ $primary-color: #006064;
     margin-top: 5rem;
   }
 }
+
+a {
+  color: $primary-color;
+}
+
+a:hover {
+color: #0E1117;
+}
+
+.chip {
+  background-color:$secondary-color;
+}
+
+.chip:hover {
+  background-color: $primary-color;
+}
+
+nav {
+  padding-left: 10px;
+  background: white;
+}
+
+a.brand-logo {
+  width: 50px;
+}
+
+.profile-name {
+  font-size: 21px;
+}
+
+li.collection-itemavatar:hover {
+  background-color: $secondary-color;
+  }
+
+.profilecontainer{
+  background: #ff32be;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ff32be 0%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff32be 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff32be 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff32be', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
